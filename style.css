@@ -187,6 +187,7 @@ header{
     border-radius: 50px;
     border: 2px solid #fff;
     margin-top: 20px;
+    cursor: pointer;
 }
 .about_us .applybtn button{
     background: #47aafb;
@@ -280,6 +281,7 @@ header{
     border-radius: 50px;
     border: 2px solid #fff;
     margin-top: 20px;
+    cursor: pointer;
 }
 .courses .applybtn button{
     background: #47aafb;
@@ -673,4 +675,68 @@ section .stats-info{
         height: 150px;
         background: #47aafb;
         margin-top: 30px;
+}
+
+.contact .contact-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contact .contact-title .card{
+    margin-top: 55px;
+}
+
+.contact .contact-title .card h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.contact .contact-title .card h5{
+    font-size: 15px;
+    color: #fff;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.contact .phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.contact .phone .card .uil{
+    font-size: 30px;
+    color: #fff;
+}
+
+.contact .phone .card .uil span{
+    font-size: 30px;
+    margin-left: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact .phone .card .uil span:hover{
+    color: #000;
+}
+
+.contact .phone .joinbtn button{
+    background: #47aafb;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.contact .phone button{
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    margin-top: 55px;
+    margin-left: 30px;
+}
+
+.contact .phone .joinbtn button:hover{
+    background: rgb(247, 245, 115);
+    color: #47aafb;
 }
