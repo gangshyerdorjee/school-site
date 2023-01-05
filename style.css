@@ -6,7 +6,7 @@
     font-family: 'Roboto', sans-serif;
 }
 /* Header and navbar start */
-header{
+#header{
     width: 100%;
     height: 100vh;
     background-image: url(assets/img/banner.jpg);
@@ -74,7 +74,7 @@ header{
     transition: all 0.4s ease;
  }
 
- .content{
+ header .content{
     width: 100%;
     position: absolute;
     top: 50%;
@@ -83,41 +83,41 @@ header{
     color: #fff;
 }
 
-.content h1{
+header .content h1{
     font-size: 50px;
 }
-.content p{
+header .content p{
     margin: 20px auto;
     font-size: 18px;
     font-weight: 1000;
     line-height: 25px;
     color: #fff;
 }
-.home_button{
+header .home_button{
     display: flex;
     flex-direction: row;
     margin-top: 20px;
     margin-left: 40%;
 }
-.home_button button{
+header .home_button button{
     width: 120px;
     height: 40px;
     border-radius: 50px;
     border: 2px solid #fff;
     margin-top: 20px;
 }
-.home_button .aboutusbtn button{
+header .home_button .aboutusbtn button{
     background: #fff;
     color: #47aafb;
     margin-right: 10px;
     font-size: 15px;
 }
-.home_button .joinusbtn button{
+header.home_button .joinusbtn button{
     background: #47aafb;
     color: #fff;
     font-size: 15px;
 }
-.home_button button:hover{
+header .home_button button:hover{
     background: #000;
     color: #fff;
 }
@@ -382,14 +382,14 @@ section .news-container{
     margin-top: 20px;
 }
 
-section .events{
+section .news-container .events{
     position: relative;
     width: 50%;
     height: 100%;
     background-color: rgba(0, 0, 0, .5);
 }
 
-section .events ul{
+section .news-container .events ul{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -397,13 +397,13 @@ section .events ul{
     padding: 40px;
 }
 
-section .events ul li{
+section .news-container .events ul li{
     list-style: none;
     background: #fff;
     height: 200px;
 }
 
-section .events ul li .time{
+section .news-container .events ul li .time{
     position: relative;
     padding: 20px;
     background: #262626;
@@ -414,11 +414,11 @@ section .events ul li .time{
     transition: .5s;
 }
 
-section .events ul li:hover .time{
+section .news-container .events ul li:hover .time{
     background: #e91e63;
 }
 
-section .events ul li .time h2{
+section .news-container .events ul li .time h2{
     position: relative;
     top: 50%;
     left: 50%;
@@ -427,11 +427,11 @@ section .events ul li .time h2{
     font-size: 60px;
     line-height: 30px;
 }
-section .events ul li .time h2 span{
+section .news-container .events ul li .time h2 span{
     font-size: 30px;
 }
 
-section .events ul li .details{
+section .news-container .events ul li .details{
    padding: 20px;
    background: #fff; 
    width: 70%;
@@ -439,21 +439,21 @@ section .events ul li .details{
    float: left;
 }
 
-section .events ul li .details h3{
+section .news-container .events ul li .details h3{
     position: relative;
     margin: 0;
     padding: 0;
     font-size: 22px;
 }
 
-section .events ul li .details p{
+section .news-container .events ul li .details p{
     position: relative;
     margin: 10px 0 0;
     padding: 0;
     font-size: 16px;
 }
 
-section .events ul li .details a{
+section .news-container  .events ul li .details a{
     display: inline-block;
     text-decoration: none;
     padding: 10px 15px;
@@ -463,7 +463,7 @@ section .events ul li .details a{
     transition: .5s;
 }
 
-section .events ul li .details a:hover{
+section .news-container .events ul li .details a:hover{
     background: #e91e63;
     color: #fff;
     border-color: #e91e63;
@@ -739,4 +739,119 @@ section .stats-info{
 .contact .phone .joinbtn button:hover{
     background: rgb(247, 245, 115);
     color: #47aafb;
+}
+
+.contact .address-map{
+    width: 100%;
+    border: 1px solid #dadada;
+    padding: 7px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* contact end */
+
+/* footer start */
+footer{
+    margin-top: 400px;
+    background: #000;
+}
+ footer .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 200px;
+ }
+
+ footer .container .footer-main h2{
+    font-size: 30px;
+    color: #fff;
+    font-family: sans-serif;
+    margin-top: 20px;
+ }
+ footer .container .footer-main .card ul li{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+    margin-top: 15px;
+ }
+
+ footer .container .footer-main .card ul a{
+    text-decoration: none;
+ }
+
+ footer .container .footer-main .card input{
+    width: 250px;
+    height: 50px;
+    margin-top: 15px;
+    overflow: hidden;
+    margin-right: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+ }
+
+ footer .container .footer-main .card button{
+    width: 60px;
+    height: 50px;
+    background: #47aafb;
+    margin-left: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+ }
+
+ footer .container .footer-main .card button span .uil{
+    color: #fff;
+    font-size: medium;
+ } 
+ footer .container .footer-main .card p{
+    font-size: 14px;
+    color: #fff;
+    margin-top: 15px;
+ } 
+
+ footer .footer-copyright p{
+    text-align: center;
+    padding-top: 30px;
+    color: #fff;
+}
+footer .footer-copyright a{
+    color: #47aafb;
+    padding-left: 3px;
+    text-decoration: none;
+}
+
+footer .footer-copyright a:hover{
+    color: rgb(247, 245, 115);
+}
+
+footer .scroll{
+    text-align: center;
+    scroll-behavior: smooth;
+    display: flex;
+    justify-content: flex-end;
+}
+footer .scroll a{
+    display: inline-block;
+    width: 30px;
+    height: 70px;
+    
+}
+
+footer .scroll a i{
+    color: #fff;
+    font-size: 30px;
+}
+
+
+
+/* ************************ From CSS*************************** */
+.form-container{
+    margin: 50px;
+} 
+.form-container h2{
+    text-align: center;
+    font-size: 30px;
+    font-style: initial;
+
 }
